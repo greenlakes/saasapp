@@ -1,0 +1,4 @@
+1/ User should see the link for basic plan on home page
+2/ User should see the link for basic plan on home page
+3/ Basic plan link should point to the standard devise sign up form
+4/ Pro plan link should take the user to a custome sign up form

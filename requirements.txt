@@ -16,3 +16,6 @@ token. Rails should save customer token and user information to our database.
 (When our forms are submitted, we should record into our Users database table whether the customer is setting up a Basic account or Pro account.
 We can do this by inserting the Plan ID inside both sign up forms using hidden fields.
 Now, every user record (i.e. user object) will have a membership plan associated.)
+
+Next, we need to label our Pro form so that our upcoming Javascript code can target that form specifically.
+We also need to include the Stripe JS library and our Stripe public key somewhere on the site so that our Javascript can reference them.

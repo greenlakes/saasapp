@@ -1,0 +1,25 @@
+<%= form_for @profile, url: user_profile_path do |f| %>
+  <div class="form-group">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, class: 'form-control' %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class: 'form-control' %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :pnone_number %>
+    <%= f.text_field :pnone_number, class: 'form-control' %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :contact_email %>
+    <%= f.text_field :contact_email, class: 'form-control' %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.submit "Update Profile", class: 'btn btn-primary' %>
+  </div>
+<% end %>

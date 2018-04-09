@@ -17,6 +17,7 @@ gem 'hirb', '~> 0.7.3'
 gem 'devise', '~> 4.2'
 gem 'stripe', '>= 1.43'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

@@ -1,6 +1,18 @@
-<%= @user.profile.first_name %> 
-<%= @user.profile.last_name %>
-<% if current_user.plan_id == 2 %>
-  <%= @user.profile.phone_number %>
-  <%= @user.profile.contact_email %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <%= image_tag @user.profile.avatar.url %> 
+    </div>
+    
+    <div class="col-md-6 text-center">
+      <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+        <% if current_user.plan_id == 2 %>
+        <div class="well">
+          <%= @user.profile.pnone_number %>
+          <%= @user.profile.contact_email %>
+        </div>
+        <% end %>
+       
+    </div>
+  </div>
+</div>
